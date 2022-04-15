@@ -247,15 +247,17 @@ Created by : mutationthemes
 
  .reservation-card-container {
     position: relative;
-    border: 1px solid rgba(0, 0, 0, .1);
+    /* border: 1px solid rgba(0, 0, 0, .1); */
     display: table;
     height: 100%;
-    text-align: center;
+    /* text-align: center; */
     width: 100%;
 }
 .reservation-card .reservation-card-inner {
     display: table-cell;
-    vertical-align: middle;
+    position: absolute;
+    bottom: 0;
+    vertical-align: bottom;
     width: 100%;
 }
 .no-gutters > .container-fluid > .row > .col, .no-gutters > .container-fluid > .row > [class*="col-"] {
@@ -657,6 +659,14 @@ a[data-toggle="tab"] {
     color: #b5a46d;
     background-color: rgba(181, 164, 109, 0.1);
 }
+#service-label{
+    /* background-color: rgba(181, 164, 109, 0); */
+    font-size: 1rem;
+    background-color: rgba(181, 164, 109, 0.059);
+    /* margin-top: 30vh; */
+    /* color: #f4c836; */
+    color: #dcb269;
+}
 
 .hover-effect {
     position: relative;
@@ -761,8 +771,8 @@ div[class*="col-"].spacer-one-top-lg, .spacer-one-top-lg{
     padding-top: 8rem;
 }
 div[class*="col-"].spacer-double-lg, .spacer-double-lg {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
 }
 div[class*="col-"].spacer-one-bottom-md, .spacer-one-bottom-md{
     padding-bottom: 5rem;
@@ -872,6 +882,7 @@ h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hov
 .jarallax {
     position: relative;
     z-index: 0;
+    height: 51vh;
 }
 .jarallax > .jarallax-img {
     position: absolute;
@@ -1126,3 +1137,109 @@ h2, .h2{
 }
 }
 /*End mediaqueries*/
+
+
+#image1{
+    height: 40vh;
+    width: 27vh;
+}
+
+#image2{
+    height: 29vh;
+}
+
+#image3{
+    height: 28vh;
+    width: 23vw;
+}
+
+#image4{
+    height: 40vh;
+    width: 30vh;
+}
+
+/* .hi{
+    height: 500px;
+    border: 5px solid black;
+
+} */
+
+/* .service-block2{
+    position: relative;
+} */
+
+
+
+.service-block1{
+    background: linear-gradient(rgba(33, 33, 33, 0.4), rgba(33, 33, 33, 0.4)),url('Peanut Butter and Jelly.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    z-index: 0;
+    /* overflow: hidden;
+    transition: transform 5s, filter 3s ease-in-out; */
+    
+}
+/* .service-block1:hover{
+    filter: brightness(100%);
+    transform: scale(1.2);
+} */
+
+
+.service-section{
+    width: 100%;
+    height: 100%;
+}
+
+#service-image{
+    max-height: 70vh 
+}
+
+#service-h2{
+    padding-right: 6rem;
+    /* font-size: 2.3rem; */
+    color: white;
+}
+
+/* #service-link1{
+    display: block;
+    z-index: 5;
+} */
+
+.img-hover-zoom {
+    /* height: 300px; [1.1] Set it as per your need */
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  }
+  
+  /* [2] Transition property for smooth transformation of images */
+  /* .img-hover-zoom img {
+    transition: transform .5s ease;
+  } */
+  
+  /* [3] Finally, transforming the image when container gets hovered */
+  /* .img-hover-zoom:hover img {
+    transform: scale(1.5);
+  } */
+
+  .img-hover-zoom--slowmo img {
+    /* transform-origin: 50% 65%; */
+    transition: transform 5s, filter 3s ease-in-out;
+    /* filter: brightness(150%); */
+  }
+  
+  /* The Transformation */
+  .img-hover-zoom--slowmo:hover img {
+    filter: brightness(100%);
+    transform: scale(1.2);
+  }
+
+  /* .service-zoom{
+    overflow: hidden;
+    transition: transform 5s, filter 3s ease-in-out;
+  } */
+
+  /* .service-zoom:hover{
+    filter: brightness(100%);
+    transform: scale(1.2);
+  } */
+

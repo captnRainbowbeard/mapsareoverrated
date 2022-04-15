@@ -8781,7 +8781,7 @@ button.bg-dark:focus {
   }
   .pl-lg-2,
   .px-lg-2 {
-    padding-left: 0.5rem !important;
+    margin-left: 0.5rem !important;
   }
   .p-lg-3 {
     padding: 1rem !important;
